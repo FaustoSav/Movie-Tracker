@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aca se puede poner css default */
+@layer base {
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+}
+
+/* Aca solo tailwind */
+@layer components {
+  /* SHARED */
+
+  body {
+    @apply bg-navBarBG;
+  }
+  .sides-padding {
+    @apply px-3 sm:px-4 xl:px-5 2xl:px-6;
+  }
+  .inputs-rounded {
+    @apply rounded-[5px] sm:rounded-[7px];
+  }
+  .btn {
+    @apply w-full inputs-rounded h-9 font-semibold text-sm cursor-pointer tracking-wider xxs:text-base xxs:h-10 sm:h-11;
+  }
+
+
+
+    .description-subTitle{
+      @apply text-base font-[500] tracking-wider text-customRed xxs:text-lg lg:text-2xl
+    }
+
+    .description-info-container{
+      @apply flex  justify-between  md:justify-start gap-2 lg:text-lg
+    }
+  /* ICONS */
+  .icon {
+    @apply w-3 h-3;
+  }
+  .logoIcon {
+    @apply w-[32px] xxs:w-[36px] sm:w-10 md:w-12 xl:w-16 ;
+  }
+  .movieIcon {
+    @apply w-4  hover:fill-white focus:fill-white xxs:w-5 sm:w-6 md:w-[26px] xl:w-[30px];
+  }
+  .serieIcon {
+    @apply w-[18px]  hover:fill-white -translate-y-[1px]  focus:fill-white xxs:w-[22px] sm:w-[26px] md:w-[28px] xl:w-[32px];
+  }
+  .bookmarkIcon {
+    @apply w-[16px] hover:fill-white focus:fill-white xxs:w-[20px] sm:w-[24px] md:w-[26px] xl:w-[30px];
+  }
+  .nav__icon-container {
+    @apply  cursor-pointer  flex items-center justify-center gap-2 lg:gap-5   text-xl fill-[#5A698F] text-[#5A698F] hover:text-white hover:fill-white;
+  }
+
+  /* NAV BAR */
+
+  .nav {
+    @apply w-full sides-padding  bg-navBarBG h-16 leading-[64px] text-white flex justify-between items-center sm:h-20 sm:leading-[80px]  xl:h-24 xl:leading-[96px];
+  }
+
+  .nav-text{
+    @apply hidden md:block
+  }
+
+
+  /* MOVIES CARD */
+  .moviesCardsContainer {
+    @apply grid grid-cols-2 gap-2 sides-padding   pb-10 xxs:gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-4 xl:grid-cols-5 xl:gap-5 2xl:grid-cols-6 2xl:gap-6   drop-shadow-md shadow-white;
+  }
+
+  .movieCard {
+    @apply  overflow-hidden cursor-pointer hover:scale-105 transition-all ;
+  }
+  .movieTitle {
+    @apply font-[400] text-[12px] text-white xxs:text-sm sm:text-[15px] md:text-base;
+  }
+
+  .movie__BookmarkContainer {
+    @apply absolute right-1  top-1 xxs:right-2 xxs:top-2 bg-black/40 rounded-full w-7 h-7 grid place-content-center cursor-pointer xxs:h-8 xxs:w-8  fill-none hover:fill-white lg:h-10 lg:w-10;
+  }
+
+  .movie__subInfo {
+    @apply text-[11px] tracking-wide font-thin flex  items-center justify-center  h-5 leading-5  gap-[5px] text-slate-300 xxs:gap-[8px] xxs:text-xs;
+  }
+
+  /* LOGIN */
+
+  .form {
+    @apply w-full flex flex-col items-center justify-center sm:max-w-sm  md:max-w-md;
+  }
+  .form-title {
+    @apply w-full text-white  text-lg text-center font-bold mb-10 xxs:text-xl;
+  }
+  .input {
+    @apply w-full border  sides-padding h-9 shadow-sm border-zinc-300 inputs-rounded xxs:h-10 sm:h-11 focus:outline-none  focus:bg-red-100 text-sm sm:text-base;
+  }
+
+  .label {
+    @apply w-full text-[12px] text-white font-medium  xxs:text-sm sm:font-medium sm:text-[15px];
+  }
+  .input-container {
+    @apply w-full space-y-1 xxs:space-y-2 md:space-y-3 my-3 xxs:my-4;
+  }
+  .forgot-password {
+    @apply label text-end  text-customRed;
+  }
+  .btn-loggin {
+    @apply btn bg-customRed border-customRed  my-2 xxs:my-4  text-darkBlueBG hover:opacity-90;
+  }
+  .btn-google {
+    @apply btn border  border-customRed  text-customRed hover:opacity-90;
+  }
+}
