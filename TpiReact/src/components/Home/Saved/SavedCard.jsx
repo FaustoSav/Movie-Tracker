@@ -77,7 +77,7 @@ const SavedCard = ({ film }) => {
           <img
             className="rounded-t-lg w-full h-full    "
             src={`https://image.tmdb.org/t/p/w500/` + film.movieImg}
-            onClick={() => showMovieDetail(film.id)}
+            onClick={() => showMovieDetail(film.movieId)}
             alt="movie-image"
           />
         </div>
