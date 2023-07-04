@@ -18,7 +18,7 @@ const MovieDescription = () => {
     <div className=" sides-padding max-w-6xl mx-auto lg:mt-10">
       <div className="flex w-full justify-between items-center text-white tracking-wider mb-2">
         <h3 className="form-title text-start m-0 sm:text-2xl md:text-3xl lg:text-4xl ">
-          {dataMovie?.original_title}
+          {dataMovie?.title}
         </h3>
         <span className="form-title text-end m-0 font-medium ">
           {Math.round(dataMovie?.vote_average * 10) / 10}/10{" "}
