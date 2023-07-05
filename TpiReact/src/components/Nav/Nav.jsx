@@ -49,7 +49,7 @@ const Nav = () => {
         </NavLink>
       </div>
 
-      <div className="md:text-lg xl:text-xl hover:underline" onClick={handleLogOut}>
+      <div className="md:text-lg xl:text-xl hover:underline cursor:pointer" onClick={handleLogOut}>
         Logout{" "}
       </div>
     </div>
