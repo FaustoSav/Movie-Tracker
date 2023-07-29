@@ -6,4 +6,4 @@ Tecnologias usadas
   - Firebase
 
   - 
-[DEMO]([https://ecommercefaustosav.vercel.app](https://tpi-labo3.vercel.app/home)https://tpi-labo3.vercel.app)
+[DEMO](https://tpi-labo3.vercel.app)
