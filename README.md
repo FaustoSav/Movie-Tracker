@@ -5,5 +5,4 @@ Tecnologias usadas
   - Tailwind
   - Firebase
 
-  - 
 [DEMO](https://tpi-labo3.vercel.app)
